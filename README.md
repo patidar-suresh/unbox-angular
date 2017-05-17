@@ -3,7 +3,7 @@
 UnboxAngular is code repository created to cover the code for all the concepts explained in blog/training on "Unbox Angular" by Suresh Patidar
 
   - Contains final code that you can refer in your project
-  - Commit log and diff will help you concepts for each blog/training session
+  - Commit log and diff will help you understand the concepts for each blog/training session
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.0.
 

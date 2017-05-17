@@ -1,6 +1,6 @@
 {
   "name": "unbox-angular",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -8,7 +8,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "extract-i18n":"ng xi18n --output-path src/locale --i18n-format xlf",
+    "build-i18n:fr": "ng build --output-path=dist/fr --aot -prod --bh /fr/ --i18n-file=src/locale/messages.fr.xlf --i18n-format=xlf --locale=fr",
+	"build-i18n:en": "ng build --output-path=dist/en --aot -prod --bh /en/ --i18n-file=src/locale/messages.en.xlf --i18n-format=xlf --locale=en",
+    "build-i18n": "npm run build-i18n:en && npm run build-i18n:fr"
   },
   "private": true,
   "dependencies": {
